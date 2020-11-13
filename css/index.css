@@ -1,0 +1,187 @@
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    color: #666;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus {
+    text-decoration: none;
+}
+@media screen and (min-width:1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+body {
+    background-color: #f5f5f5;
+}
+.container {
+    background-color: #fff;
+}
+.header {
+    padding-left: 0;
+}
+.logo {
+    background-color: #429ad9;
+}
+.logo img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.logo span {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+.nav {
+    background-color: #eeeeee;
+}
+.nav a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    padding-left: 30px;
+}
+.nav a:hover {
+    background-color: #fff;
+    color: #333333;
+}
+.nav a::before {
+    vertical-align: -3px;
+    margin-right: 5px;
+}
+.news li {
+    float: left;
+    width: 25%;
+    height: 128px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.news li:first-child {
+    width: 50%;
+    height: 266px;
+}
+.news li:first-child p {
+    font-size: 20px;
+    line-height: 41px;
+    padding: 0 10px;
+}
+.news  li .expand {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.news li a img {
+    width: 100%;
+    height: 100%;
+}
+.news ul li a .carousel-caption {
+    line-height: 31px;
+    font-size: 16px;
+}
+.news li a p ,
+.carousel-caption {
+    transition: 1s;
+    transform: translateY(42px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    width: 100%;
+    height: 41px;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, .5);
+    /* 多行溢出隐藏显示点点点 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /* 多行溢出隐藏显示点点点 */
+}
+.news li a:hover p {
+    transform: translateY(0);
+}
+.news li a:hover .carousel-caption {
+    transform: translateY(0);
+}
+.purlish {
+    border-top: 1px solid #ccc;
+}
+@media screen and (max-width:991px) {
+    .nav li {
+        float: left;
+        width:20%;
+    }
+    article {
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:776px) {
+    .nav li a   {
+        font-size: 14px;
+    }
+    .news ul li:first-child{
+        width: 100%;
+    }
+    .news ul li{
+        width: 50%;
+    }
+    .purlish div h3 {
+        font-size: 14px;
+    }
+}
+.purlish .row {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+.pik {
+    margin-top: 10px;
+}
+.pik img {
+    width: 100%;
+}
+.banner img {
+    width: 100%;
+    background-size: cover;
+}
+.hot {
+    margin-top:20px;
+    padding: 0 20px 20px;
+    border: 1px solid #ccc;
+}
+.hot span {
+    display: inline-block;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+.hot p {
+    font-size: 12px;
+}
+
